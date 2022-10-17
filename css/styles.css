@@ -1,0 +1,170 @@
+/* font-size: 14
+
+color: #212121; чорний
+color: #000000; чоний лого
+color: #2196F3; акцент
+color: #757575; сірий
+
+color: #FFFFFF білий
+color: rgba(255, 255, 255, 0.6); білий з прозорістю, футер
+
+background: #2F303A; темний сірий
+background: #F5F4FA; світлий сірий
+background: #F5F5F5; білий фон
+
+#ECECEC - бордер хедера
+1px
+#EEEEEE бордер карток
+
+*/
+/* roboto 400 500 700 900
+Raleway 700 */
+
+
+:root {
+  --accent-color: #2196F3;
+  --logo-dark-font-color: #000000;
+  --accent-color: #2196F3;
+  --main-light-color: #FFFFFF;
+  --title-color: #212121;
+  --base-text-color: #757575;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+ 
+  --hover-button-color:  #188CE8;
+  --main-bg-color: #F5F5F5;
+  --light-bg-color: #F5F4FA;
+  --dark-bg-color: #2F303A;
+  
+  --heder-bordered: #ECECEC;
+  --sections-bordered: #EEEEEE;
+  
+
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+.list {
+  list-style: none;
+}
+.current {
+  color: var(--accent-color);
+}
+
+body {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--base-text-color);
+}
+
+/* Logo */
+.logo {
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-header {
+  color: var(--logo-dark-font-color);
+}
+.logo-footer {
+  color: var(--main-light-color);
+}
+.accent {
+  color: var(--accent-color);
+}
+
+/* Header */
+.header {
+  background-color: var(--main-light-color);
+}
+.nav,
+.contacts {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav {
+  color: var(--title-color);
+}
+.contacts {
+  color: var(--base-text-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--dark-bg-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-light-color);
+}
+.button {
+  background-color: var(--accent-color);
+  font-family: inherit;
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-light-color);
+}
+.button:hover, 
+.button:focus {
+  background-color: var(--hover-button-color);
+}
+
+/* Features */
+.features-title {
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  color: var(--title-color); 
+}
+
+/* What we do */
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: inherit;
+  color: var(--title-color);
+}
+
+/* Team */
+.section {
+  background-color: var(--light-bg-color);
+}
+.sub-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: inherit;
+  color: var(--title-color);
+}
+.text {
+  font-size: 16px;
+line-height: 1.19;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-bg-color);
+}
+.address {
+  color: var(--main-light-color);
+}
+.footer-contact {
+  color: var(--footer-link-color);
+}
