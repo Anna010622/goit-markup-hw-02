@@ -113,12 +113,12 @@ body {
 .button {
   background-color: var(--accent-color);
   font-family: inherit;
-  /* font-style: normal; */
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--main-light-color);
+  cursor: pointer;
 }
 .button:hover, 
 .button:focus {
@@ -167,4 +167,42 @@ line-height: 1.19;
 }
 .footer-contact {
   color: var(--footer-link-color);
+}
+
+
+/* Portfolio */
+.filter-button{
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background-color: var(--light-bg-color);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+}
+.current-filter,
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--main-light-color);
+  background-color: var(--accent-color);
+  padding: 6px 25px;
+}
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+.item {
+  border: 1px solid var(--sections-bordered);
+  width: 370px;
 }
